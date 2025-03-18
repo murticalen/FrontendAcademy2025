@@ -11,12 +11,13 @@ export default function Messages() {
   // Your task here is to fix the issue and make sure that the message
   // from last clicked button is always displayed.
   //
-  // HINT: You have a memory leak :)
+  // HINT: You have a memory leak :) Maybe useEffect documentation
+  // can provide you with some guidance.
   const [displaySuccess, setDisplaySuccess] = useState("")
   const [sendMessage, setSendMessage] = useState("")
 
   useEffect(() => {
-    let timer = setTimeout(() => {
+    const timer = setTimeout(() => {
       setDisplaySuccess(sendMessage)
     }, 1000)
   }, [sendMessage])
