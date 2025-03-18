@@ -9,8 +9,6 @@ interface PokemonResponse {
 }
 
 export default function Fetch() {
-  // Notice that useState is a generic function, which means you can specify the type of the state
-  // in this case, we want to store an array of Pokémon, so we specify PokemonResponse[]
   const [pokemon, setPokemon] = useState<PokemonResponse[]>([])
 
   // your task here is to fetch Pokémon from a given URL and just display its name
