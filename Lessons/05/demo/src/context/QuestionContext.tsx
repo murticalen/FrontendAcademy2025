@@ -1,4 +1,4 @@
-import { Context, createContext } from 'react'
+import { Context, createContext } from "react"
 
 export interface QuestionContextType {
   question: string
@@ -6,6 +6,8 @@ export interface QuestionContextType {
   correctAnswerIndex: number
 }
 
-const QuestionContext = createContext<QuestionContextType | undefined>(undefined)
+const QuestionContext = createContext<QuestionContextType | undefined>(
+  undefined
+)
 
 export default QuestionContext as Context<QuestionContextType>

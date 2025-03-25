@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react'
+import { useMemo, useState } from "react"
 
 const isPrime = (num: number) => {
   for (let i = 2, s = Math.sqrt(num); i <= s; i++) {
@@ -8,7 +8,6 @@ const isPrime = (num: number) => {
 }
 
 export const MemoizedForm = () => {
-
   const [enteredNumber, setEnteredNumber] = useState(0)
   const [length, setLength] = useState(0)
 
@@ -23,19 +22,26 @@ export const MemoizedForm = () => {
   }, [enteredNumber])
 
   return (
-    <div style={{ margin: '12px', fontSize: '12px' }}>
-      <div style={{ fontSize: '16px', marginTop: '8px' }}>Memoized form:</div>
+    <div style={{ margin: "12px", fontSize: "12px" }}>
+      <div style={{ fontSize: "16px", marginTop: "8px" }}>Memoized form:</div>
       <form>
-        <label htmlFor='number-form'></label>
-        <input id='number-form' type='number' onChange={(e) => {
-          const vAsNumber = Number(e.currentTarget.value)
-          if (Number.isNaN(vAsNumber)) {
-            setEnteredNumber(0)
-          } else {
-            setEnteredNumber(vAsNumber)
-          }
-        }}></input>
-        <input type='text' onChange={(e) => setLength(e.currentTarget.value.length)}></input>
+        <label htmlFor="number-form"></label>
+        <input
+          id="number-form"
+          type="number"
+          onChange={(e) => {
+            const vAsNumber = Number(e.currentTarget.value)
+            if (Number.isNaN(vAsNumber)) {
+              setEnteredNumber(0)
+            } else {
+              setEnteredNumber(vAsNumber)
+            }
+          }}
+        ></input>
+        <input
+          type="text"
+          onChange={(e) => setLength(e.currentTarget.value.length)}
+        ></input>
       </form>
       <div>There is {numbersCount} smaller primes</div>
       <div>Text length is {length}</div>
