@@ -3,6 +3,7 @@ import { defineConfig } from "@pandacss/dev"
 import { colors } from "./design-system/colors"
 import { breakpoints } from "./design-system/breakpoints"
 import { tokens } from "./design-system/tokens"
+import { textStyles } from "./design-system/typography"
 
 export default defineConfig({
   // Whether to use css reset
@@ -18,6 +19,7 @@ export default defineConfig({
   theme: {
     breakpoints,
     tokens,
+    textStyles,
     semanticTokens: {
       colors,
     },
