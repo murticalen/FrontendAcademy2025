@@ -1,5 +1,10 @@
 import { defineConfig } from "@pandacss/dev"
 
+import { colors } from "./design-system/colors"
+import { breakpoints } from "./design-system/breakpoints"
+import { tokens } from "./design-system/tokens"
+import { textStyles } from "./design-system/typography"
+
 export default defineConfig({
   // Whether to use css reset
   preflight: true,
@@ -12,7 +17,16 @@ export default defineConfig({
 
   // Useful for theme customization
   theme: {
-    extend: {},
+    breakpoints,
+    tokens,
+    textStyles,
+    semanticTokens: {
+      colors,
+    },
+  },
+
+  conditions: {
+    dark: "[data-theme=dark] &",
   },
 
   // The output directory for your css system
