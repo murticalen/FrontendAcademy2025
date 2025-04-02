@@ -5,6 +5,10 @@ export interface Country {
   alpha3?: string
 }
 
+export interface TeamPlayer {
+  player: Player
+}
+
 export interface Player {
   id: number
   name: string
@@ -15,4 +19,5 @@ export interface Player {
   lastName?: string
   country?: Country
   jerseyNumber?: string
+  dateOfBirthTimestamp?: number
 }
