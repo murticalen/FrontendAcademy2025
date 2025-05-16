@@ -76,10 +76,10 @@ At Sofascore, we are migrating to [Feature-Sliced Design](https://feature-sliced
 
 ## User stories
 
+User stories are sentences from the user's perspective. They can be pictured as user's requirements because they don't specify the technical side of the project. The technical side is left to the developers (this includes design too).
+
 General story representing user flow:
 The user comes to the application and sees the list of tournaments fetched. Users can then navigate to the tournament page of the desired tournament. On the tournament page, users can see events available for the selected tournament. Users can refresh the browser and the same tournament page should be displayed (tournament page has a separate route describing specific tournament). From the tournament page, users can navigate to the specific event details page. On the event, details page the user can find detailed data associated with the event.
-
-User stories are sentences from the user's perspective. They can be pictured as user's requirements because they don't specify the technical side of the project. The technical side is left to the developers (this includes design too).
 
 User stories are bellow: Stories in the **bold** are required, stories in the _italic_ are a further improvement, developers will decide if any of them should be implemented. You can also add extra stories which you think are fitting.
 
@@ -109,14 +109,14 @@ Basically, the only thing that's required is having a header/footer, list of eve
 5. _User can click on tournament to open the tournament page_
 6. _User can change the date for the sport events_
 
-#### Event Cell
+#### Event Cell - an item in the list of events
 
 1. **User can see start time of the event, teams and scores**
 2. _Event status is displayed and status colors are correctly handled_
 3. _Team colors are correctly handled given the match outcome_
 4. _User can add/remove event(s) to Tracked events_
 
-#### Event Page / event widget
+#### Event Page / event widget - widget is what opens on [Sofascore](https://www.sofascore.com) when you click on an event cell on desktop main page
 
 1. **User can see teams playing in the event, score (if exists), start date and time**
 2. **Event widget links to the event page**
