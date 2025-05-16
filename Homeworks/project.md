@@ -37,7 +37,7 @@ You can make your own simple UI library (don't overcomplicate it and use too muc
 
 ## Checkpoints
 
-There will be one mandatory checkpoint between May 26th and 29th. We will arrange a Slack call and discuss your project status. You can also visit Sofascore office for the checkpoint if we are present there.
+There will be one mandatory checkpoint between May 26th and June 3rd. We will arrange a Slack call and discuss your project status. You can also visit Sofascore office for the checkpoint if we are present there.
 
 Feel free to contact us on Slack when you've added something new, have a question, and we can discuss it on a call or live.
 
